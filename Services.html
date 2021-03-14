@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="design.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Roboto&display=swap" rel="stylesheet">
+	<title>Q12</title>
+	
+	<div id="content">
+	<body>
+
+        
+        <div class="topNav">
+            		<div class="logo"><a href="Index.html">Q12</a></div>
+        <a class="topNavText" href="team.html">Team</a>
+		<a class="topNavText" id="active" href="Services.html">About</a>
+		<a class="topNavText" href="Index.html">Home</a>
+        </div>
+        
+	
+
+	<div class="background">
+	<img class="img1" src="Imgs/Banner_Blue.png" alt="Banner">
+
+	</div>
+		<div class="content">
+			<div class="pageheader">Services</div>
+		<div class="para1">
+			
+			<button class="collapsible">What is Q12?</button>
+			<div class="information">
+				<p>
+					Q12 is a good old company which is really good at working with other peeps. We're are a company that is qualified with design, coding, art and much, much more. We love games and entertainment and love having a good time developing for other people. We take on contract work and design small games in are team.
+			</p>
+			</div>
+		</div>
+			<!--Still Banner-->
+		<div class="para2" style="width: 100%; padding: 0;">
+			
+			<div class="stillHeader">A Different War</div>
+			
+			<div class="stillInformation">
+				<img class = "stillBanner" src="Imgs/About_Banner.png" alt="">
+			</div>
+			
+		</div>
+			<div class="para2" style="width: 100%; padding: 0;">
+			
+			<button class="collapsible">What do we offer</button>
+			<div class="information">
+				<p>
+Here at Q12 we offer programming, game design, art tings, and much more. Our team has knowledge in many of the departments. Are programmers have knowledge in C#, C++, C, Java, html and CSS. The game designers have been making games for longer then I can count. The artist can draw a quick anime in less the a day. Trust me when I say this, THIS IS A GREAT INVESTMENT.
+
+				</p>
+			</div>
+		</div>
+		
+		</div>
+		<div class="mapouter" style=" margin-bottom: 2%"><div class="gmap_canvas"><iframe width="500" height="500"  id="gmap_canvas" src="https://maps.google.com/maps?q=101%20Collins%20St%20Melbourne&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+			<style>
+			.mapouter{
+				   display: block;
+  margin-left: auto;
+  margin-right: auto;
+				height:30%;
+  width: 30%;
+				}
+			.gmap_canvas {
+				overflow:hidden;
+				background:none!important;
+				height:100%;
+				width:100%;
+				}
+			</style>
+		</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+	</body>
+        <div class="Footer"><a class="copyright">&copy;	Q12</a></div>
+		</div>
+
+    <script> 
+        var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+       	
+   
+</script>
+		<style>
+		body{
+			background-color: #1063D9;
+		}
+			.information{
+				  background-color: #19345A;
+			}
+			.stillInformation{
+				  background-color: #19345A;
+			}
+	</style>
+</html>

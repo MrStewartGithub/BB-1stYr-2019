@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="design.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton|Roboto&display=swap" rel="stylesheet">
+	<title>Q12</title>
+	
+	<div id="content">
+	<body>
+				<div class="clock" id="txt"></div>
+
+        
+        <div class="topNav">
+        <div class="logo"><a href="Index.html">Q12</a></div>
+        <a class="topNavText" id="active" href="team.html">Team</a>
+		<a class="topNavText"  href="Services.html">About</a>
+		<a class="topNavText"  href="Index.html">Home</a>
+        </div>
+        
+	
+
+	<div class="background">
+	<img class="img1" src="Imgs/Banner_green.png" alt="Banner">
+
+	</div>
+		<div class="content">
+						<div class="pageheader">Welcome to the Team</div>
+
+		<div class="para1">
+			
+			
+			<!--Still Banner-->
+		<div class="para2" style="width: 100%; padding: 0;">
+			
+			<div class="stillHeader">The Team</div>
+			
+			<div class="stillInformation">
+<table style="width:100%; margin-bottom: 5%;">
+  <tr>
+    <th style="font-weight: 900;">Image</th>
+    <th style="font-weight: 900;">Name</th> 
+    <th style="font-weight: 900;">Role</th>
+  </tr>
+  <tr>
+    <td><img class="tableImg" src="Imgs/OtherDude.jpg"></td>
+    <td>Fred Scool</td>
+    <td>Big old programmer</td>
+  </tr>
+  <tr>
+    <td><img class="tableImg" src="Imgs/ColonelSanders.jpg"></td>
+    <td>Kernel Sanders</td>
+    <td>Alright Artist</td>
+  </tr>
+  <tr>
+    <td><img class="tableImg" src="Imgs/Steve.jpg"></td>
+    <td>Steve Booshby</td>
+    <td>Pretty cool Game designer</td>
+  </tr>
+	<tr>
+    <td><img class="tableImg" src="Imgs/Ronald.jpg"></td>
+    <td>Ronald Mac-Donald</td>
+    <td>Is Production Manager</td>
+  </tr>
+</table>
+			</div>
+			
+		</div>
+			
+						<!--Still Image-->
+            </div>
+        </div>
+		
+	</body>
+        <div class="Footer"><a class="copyright">&copy;	Q12</a></div>
+		</div>
+
+    <script> 
+        var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+        
+   
+
+	
+       	
+   
+</script>
+	<style>
+		body{
+			background-color: #10D943;
+		}
+			.information{
+				  background-color: #195A29;
+			}
+			.stillInformation{
+				  background-color: #195A29;
+			}
+	</style>
+</html>
